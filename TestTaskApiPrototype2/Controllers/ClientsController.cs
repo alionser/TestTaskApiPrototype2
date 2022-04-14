@@ -23,5 +23,15 @@ namespace TestTaskApiPrototype2.Controllers
             return await _context.Clients.ToListAsync();
         }
 
+        [HttpPut]
+        public async Task<IActionResult> PutClient()
+        {
+            Client client = new Client();
+            _context.Clients.Add(client);
+            await _context.SaveChangesAsync();
+
+            return new JsonResult(client);
+        }
+
     }
 }

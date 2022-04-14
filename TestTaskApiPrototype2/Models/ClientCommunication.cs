@@ -4,7 +4,7 @@ namespace TestTaskApiPrototype2.Models
 {
     public class ClientCommunication
     {
-        public int UpdatedAtId { get; set; }
+        public int ClientCommunicationId { get; set; }
 
 
         [DataMember(Name = "Type")]
