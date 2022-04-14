@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
+using System.Text.Json.Serialization;
 
 namespace TestTaskApiPrototype2.Models
 {
@@ -8,6 +9,7 @@ namespace TestTaskApiPrototype2.Models
     public class Address
     {
         [Key]
+        [JsonIgnore]
         public int AddressId { get; set; }
 
 

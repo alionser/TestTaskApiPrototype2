@@ -12,6 +12,7 @@ namespace TestTaskApiPrototype2.Models
     public class Client
     {
         [Key]
+        [JsonIgnore]
         public int ClientId { get; set; }
 
 

@@ -1,10 +1,12 @@
 ﻿using System.Runtime.Serialization;
+using Newtonsoft.Json;
 
 namespace TestTaskApiPrototype2.Models
 {
     [DataContract]
     public class ClientCommunication
     {
+        [JsonIgnore]
         public int ClientCommunicationId { get; set; }
 
 

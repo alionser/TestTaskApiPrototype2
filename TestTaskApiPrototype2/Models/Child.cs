@@ -9,6 +9,7 @@ namespace TestTaskApiPrototype2.Models
     public class Child
     {
         [Key] //стоит ли явно указывать?
+        [JsonIgnore]
         public int ChildId { get; set; }
 
 
