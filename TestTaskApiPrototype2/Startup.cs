@@ -1,9 +1,13 @@
+using System;
+using System.Text.Encodings.Web;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using TestTaskApiPrototype2.Models;
+using System.Text.Json;
+using System.Text.Json.Serialization;
 
 namespace TestTaskApiPrototype2
 {
@@ -19,7 +23,10 @@ namespace TestTaskApiPrototype2
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
-            services.AddControllers();
+            services.AddControllers().AddJsonOptions(j =>
+            {
+                j.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter());
+            });
             services.AddDbContext<ApplicationContext>();
             // services.AddSwaggerGen(c =>
             // {

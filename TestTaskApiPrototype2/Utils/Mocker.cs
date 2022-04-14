@@ -41,6 +41,9 @@ namespace TestTaskApiPrototype2.Utils
             result.TypeEmp = RandomEnumValue<EmpType>();
             result.MonthIncome = _faker.Random.Double(0, 100000.0);
             result.MonthExpense = _faker.Random.Double(0, 100000.0);
+            result.Files = new List<File>();
+            for (int i = 0; i < rng.Next(0, 4); i++)
+                result.Files.Add(CreateRandomFile());
             result.Documents = new List<Document>();
             for (int i = 0; i < rng.Next(0, 4); i++)
                 result.Documents.Add(CreateRandomDocumetn());
