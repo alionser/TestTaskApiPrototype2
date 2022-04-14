@@ -5,6 +5,7 @@ using System.Runtime.Serialization;
 
 namespace TestTaskApiPrototype2.Models
 {
+    [DataContract]
     public class Job
     {
         [Key]

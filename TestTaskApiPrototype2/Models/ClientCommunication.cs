@@ -2,6 +2,7 @@
 
 namespace TestTaskApiPrototype2.Models
 {
+    [DataContract]
     public class ClientCommunication
     {
         public int ClientCommunicationId { get; set; }

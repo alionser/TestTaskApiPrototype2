@@ -2,9 +2,13 @@
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
+using System.Text.Json.Serialization;
+using Microsoft.EntityFrameworkCore.Metadata;
+using JsonExtensionDataAttribute = Newtonsoft.Json.JsonExtensionDataAttribute;
 
 namespace TestTaskApiPrototype2.Models
 {
+    [DataContract]
     public class Client
     {
         [Key]
@@ -24,6 +28,7 @@ namespace TestTaskApiPrototype2.Models
         public string Patronymic { get; set; }
 
         [DataMember(Name= "dob")]
+        [JsonPropertyName("dob")] //TODO: КО ВСЕМ СВОЕЙСТВАМ ДОБАВЛЯТЬ?
         public DateTime DateOfBirth { get; set; }
 
         [DataMember(Name= "spouse")]
@@ -35,10 +40,10 @@ namespace TestTaskApiPrototype2.Models
         [DataMember(Name= "passport")]
         public DocumentPassport Passport { get; set; }
 
-        [DataMember(Name= "address")] //разобраться с наименованиями
+        [DataMember(Name= "livingAddress")] //разобраться с наименованиями
         public Address LivingAddress { get; set; }
 
-        [DataMember(Name= "address")]
+        [DataMember(Name= "regAddress")]
         public Address RegAddress { get; set; }
 
         [DataMember(Name= "jobs")]
@@ -54,15 +59,19 @@ namespace TestTaskApiPrototype2.Models
         public double CurFieldExp { get; set; } //int?
 
         [DataMember(Name= "status")]
+        // [JsonConverter(typeof(JsonStringEnumConverter))]
         public StatusType Status { get; set; }
 
         [DataMember(Name= "typeEducation")]
+        // [JsonConverter(typeof(JsonStringEnumConverter))]
         public EducationType TypeEducation { get; set; }
 
         [DataMember(Name= "maritalStatus")]
+        // [JsonConverter(typeof(JsonStringEnumConverter))]
         public MaritalStatusType MaritalStatus { get; set; }
 
         [DataMember(Name= "typeEmp")]
+        // [JsonConverter(typeof(JsonStringEnumConverter))]
         public EmpType TypeEmp { get; set; }
 
         [DataMember(Name= "monIncome")]

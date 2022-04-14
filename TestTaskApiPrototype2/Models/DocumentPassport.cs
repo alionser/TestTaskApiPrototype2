@@ -4,6 +4,7 @@ using System.Runtime.Serialization;
 
 namespace TestTaskApiPrototype2.Models
 {
+    [DataContract]
     public class DocumentPassport
     {
         [Key]
