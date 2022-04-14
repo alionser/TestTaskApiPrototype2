@@ -1,0 +1,643 @@
+﻿[
+  {
+    "id": "10dd123a-e251-4157-abd0-3407706def04",
+    "name": "Лука",
+    "surname": "Фролова",
+    "patronymic": "Германич",
+    "dob": "2022-02-13T14:09:53.3101038",
+    "spouse": null,
+    "children": [
+      {
+        "name": "Антонина",
+        "surname": "Самсонов",
+        "patronymic": "Лукаич",
+        "dob": "2021-09-29T11:52:39.3683477"
+      },
+      {
+        "name": "Роман",
+        "surname": "Пестов",
+        "patronymic": "Лукаич",
+        "dob": "2021-07-21T10:35:48.1591391"
+      },
+      {
+        "name": "Арина",
+        "surname": "Кулагин",
+        "patronymic": "Лукаич",
+        "dob": "2021-12-25T15:34:37.7628099"
+      }
+    ],
+    "passport": {
+      "id": "0900154f-ff2e-478c-b13c-cd7a36c274d1",
+      "series": "6201",
+      "number": "460 756",
+      "giver": "Андреев - Гуляева",
+      "dateIssued": "2022-03-03T13:28:59.7663174",
+      "birthPlace": "Рязань",
+      "createdAt": "2021-12-26T19:03:29.4615588",
+      "updatedAt": "2021-08-09T22:52:00.3162481"
+    },
+    "livingAddress": {
+      "id": "7193f2dc-66e9-405c-a0fc-3e124aa8f625",
+      "zipCode": "785116",
+      "country": "Гондурас",
+      "region": "Костромская область",
+      "city": "Ярославль",
+      "street": "пл. Энергетиков",
+      "house": "-67",
+      "block": "a",
+      "apartment": "㍧",
+      "createdAt": "2021-10-05T05:09:26.3924301",
+      "updatedAt": "2021-07-15T01:55:37.3833683"
+    },
+    "regAddress": {
+      "id": "d4b2b3e0-fd74-47e2-948c-50fb3df0b066",
+      "zipCode": "472917",
+      "country": "Сан-Томе и Принсипи",
+      "region": "Республика Тыва",
+      "city": "Ярославль",
+      "street": "Луговая пл.",
+      "house": "10",
+      "block": "w",
+      "apartment": "�ೈ�",
+      "createdAt": "2021-11-21T13:24:07.1047644",
+      "updatedAt": "2021-09-28T17:28:56.6254989"
+    },
+    "jobs": [],
+    "generalExp": 345123.8569547999,
+    "curWorkExp": 0,
+    "curFieldExp": 15452.672734601736,
+    "status": "Application",
+    "typeEducation": "AcademicDegree",
+    "maritalStatus": "CivilMarriage",
+    "typeEmp": "Ie",
+    "monthIncome": 40918.31773562278,
+    "monthExpense": 63410.344889112916,
+    "files": [],
+    "documents": [],
+    "communications": [
+      {
+        "type": "Email",
+        "value": "Eduard_Seleznev92@ya.ru"
+      }
+    ],
+    "createdAt": "2021-08-18T12:42:24.3879932",
+    "updatedAt": "2021-08-23T01:24:44.5895442"
+  },
+  {
+    "id": "6dc77494-2138-469f-a318-34c7b10add65",
+    "name": "Валентина",
+    "surname": "Горшков",
+    "patronymic": "Аллаич",
+    "dob": "2022-02-28T14:43:47.0948549",
+    "spouse": null,
+    "children": [],
+    "passport": {
+      "id": "fd0817ac-034f-471b-8e5e-333642d69638",
+      "series": "3216",
+      "number": "838 436",
+      "giver": "Макарова, Фокин and Шубина",
+      "dateIssued": "2022-02-25T14:49:22.4809631",
+      "birthPlace": "Новокузнецк",
+      "createdAt": "2021-11-08T09:04:34.1313937",
+      "updatedAt": "2021-06-17T17:34:26.4154097"
+    },
+    "livingAddress": {
+      "id": "bf7a4298-e7ff-4d46-b611-e59b12c824a3",
+      "zipCode": "010173",
+      "country": "Швейцария",
+      "region": "Костромская область",
+      "city": "Тула",
+      "street": "Садовый пр.",
+      "house": "-94",
+      "block": "j",
+      "apartment": "칌莉",
+      "createdAt": "2021-11-29T09:58:38.2646501",
+      "updatedAt": "2021-05-11T17:28:15.001826"
+    },
+    "regAddress": {
+      "id": "e63350b9-5de3-4868-8762-8ee03efbb6fb",
+      "zipCode": "038553",
+      "country": "Сингапур",
+      "region": "Самарская область",
+      "city": "Краснодар",
+      "street": "проспект Шоссейная",
+      "house": "3",
+      "block": "e",
+      "apartment": "騚",
+      "createdAt": "2021-07-19T04:39:15.6683832",
+      "updatedAt": "2021-09-05T04:37:15.582896"
+    },
+    "jobs": [
+      {
+        "companyName": "Одинцов - Белозерова",
+        "type": "Main",
+        "dateEmp": "2021-06-07T13:46:14.8049522",
+        "dateDismissal": "2022-01-06T22:24:28.2286525",
+        "tin": "tyeiiygnur",
+        "address": {
+          "id": "6b8935d9-7628-4755-af2f-4c2137becd68",
+          "zipCode": "256352",
+          "country": "Уганда",
+          "region": "Кемеровская область",
+          "city": "Иркутск",
+          "street": "ул. Интернациональная",
+          "house": "-24",
+          "block": "u",
+          "apartment": "",
+          "createdAt": "2021-06-19T09:00:49.3700759",
+          "updatedAt": "2021-10-25T00:20:29.1434675"
+        },
+        "jobTitle": "emzrhqvnhb",
+        "monthIncome": 3100,
+        "fioManager": "Эдуард Селезнев",
+        "site": "http://макар.info/",
+        "phoneNumbers": [
+          {
+            "phoneNumberId": 1,
+            "number": "(953)897-79-61"
+          }
+        ],
+        "createdAt": "2021-07-14T16:30:33.0718526",
+        "updatedAt": "2022-03-13T06:57:13.3772829"
+      },
+      {
+        "companyName": "Селиверстов Торг",
+        "type": "Pluralistically",
+        "dateEmp": "2021-04-18T13:02:19.4085344",
+        "dateDismissal": "2021-11-19T04:40:15.1866845",
+        "tin": "njcsbungbl",
+        "address": {
+          "id": "f77685ea-dd67-4cfd-8a6e-b743d8f3f697",
+          "zipCode": "061283",
+          "country": "Сент-Винсент и Гренадины",
+          "region": "Тамбовская область",
+          "city": "Махачкала",
+          "street": "пл. Рабочая",
+          "house": "94",
+          "block": "h",
+          "apartment": "ꂽ댇",
+          "createdAt": "2021-05-06T09:44:56.714967",
+          "updatedAt": "2021-08-12T12:09:10.5173191"
+        },
+        "jobTitle": "wgeclhexts",
+        "monthIncome": 5342,
+        "fioManager": "Эдуард Селезнев",
+        "site": "https://михаил.com/",
+        "phoneNumbers": [
+          {
+            "phoneNumberId": 2,
+            "number": "(953)897-79-61"
+          }
+        ],
+        "createdAt": "2022-03-21T09:54:01.3365705",
+        "updatedAt": "2021-12-21T00:07:01.9087985"
+      }
+    ],
+    "generalExp": 468974.0601316905,
+    "curWorkExp": 0,
+    "curFieldExp": 243469.7869436209,
+    "status": "Lead",
+    "typeEducation": "TwoOrMoreHigher",
+    "maritalStatus": "Married",
+    "typeEmp": "Owner",
+    "monthIncome": 78139.35949380479,
+    "monthExpense": 49513.22439569664,
+    "files": [
+      {
+        "fileGuid": "c3d6c3e7-7168-4936-b8cf-830e2c3a5d88"
+      },
+      {
+        "fileGuid": "9361fa54-b30d-495a-beb3-dda39d68dc73"
+      }
+    ],
+    "documents": [
+      {
+        "documentGuid": "44c21d98-0cdc-4839-92ea-ac73762c3cac"
+      },
+      {
+        "documentGuid": "5d51209e-f37c-4048-a95e-9692c052fb05"
+      }
+    ],
+    "communications": [
+      {
+        "type": "Email",
+        "value": "Eduard_Seleznev92@ya.ru"
+      },
+      {
+        "type": "Phone",
+        "value": "(953)897-79-61"
+      }
+    ],
+    "createdAt": "2022-01-25T11:17:53.1888529",
+    "updatedAt": "2021-10-17T01:54:29.189937"
+  },
+  {
+    "id": "db0d6e81-f8dd-4e3d-b6fc-1d94682368bc",
+    "name": "Анжелика",
+    "surname": "Русаков",
+    "patronymic": "Егорич",
+    "dob": "2021-07-26T10:18:35.8671455",
+    "spouse": null,
+    "children": [
+      {
+        "name": "Николай",
+        "surname": "Князев",
+        "patronymic": "Анжеликаич",
+        "dob": "2022-02-21T18:39:42.1953733"
+      },
+      {
+        "name": "Анфиса",
+        "surname": "Богданов",
+        "patronymic": "Анжеликаич",
+        "dob": "2021-09-06T02:29:40.0018696"
+      }
+    ],
+    "passport": {
+      "id": "1940ff7e-e7d4-466a-8dac-050cc456ea99",
+      "series": "9396",
+      "number": "932 813",
+      "giver": "Тарасова, Герасимов and Лобанова",
+      "dateIssued": "2021-06-20T12:04:20.1411588",
+      "birthPlace": "Омск",
+      "createdAt": "2022-03-14T15:37:34.9436065",
+      "updatedAt": "2021-12-16T17:57:48.9744025"
+    },
+    "livingAddress": {
+      "id": "74ce49e3-b013-4942-9558-1e0196e8c52e",
+      "zipCode": "580897",
+      "country": "Пакистан",
+      "region": "Чукотский автономный округ",
+      "city": "Белгород",
+      "street": "ул. Мичурина",
+      "house": "56",
+      "block": "b",
+      "apartment": "뼬�⿋",
+      "createdAt": "2022-03-01T20:38:39.5500843",
+      "updatedAt": "2022-03-26T03:10:08.1209579"
+    },
+    "regAddress": {
+      "id": "5f7d9c93-57a1-48dd-9642-dc27d17dd2ed",
+      "zipCode": "283776",
+      "country": "Малави",
+      "region": "Чувашская Республика",
+      "city": "Саратов",
+      "street": "Дружбы пр.",
+      "house": "64",
+      "block": "c",
+      "apartment": "ൺ兲",
+      "createdAt": "2021-10-25T15:40:38.1399132",
+      "updatedAt": "2022-02-08T22:41:47.0144543"
+    },
+    "jobs": [
+      {
+        "companyName": "Самойлова Сбыт",
+        "type": "Main",
+        "dateEmp": "2022-04-08T03:13:02.8628544",
+        "dateDismissal": "2021-05-23T04:33:00.0449721",
+        "tin": "kotbzzzhiz",
+        "address": {
+          "id": "2e73bcf1-8fee-4451-81d6-a8c4c2b80bf6",
+          "zipCode": "712017",
+          "country": "Ангилья",
+          "region": "Омская область",
+          "city": "Хабаровск",
+          "street": "Коммунальная пл.",
+          "house": "-58",
+          "block": "s",
+          "apartment": "랂",
+          "createdAt": "2021-06-05T16:04:52.0618718",
+          "updatedAt": "2021-12-09T16:04:28.3853172"
+        },
+        "jobTitle": "zmrvhzlijx",
+        "monthIncome": 3881,
+        "fioManager": "Денис Беляев",
+        "site": "https://анжела.com/",
+        "phoneNumbers": [
+          {
+            "phoneNumberId": 3,
+            "number": "(955)342-04-90"
+          },
+          {
+            "phoneNumberId": 4,
+            "number": "(955)342-04-90"
+          },
+          {
+            "phoneNumberId": 5,
+            "number": "(955)342-04-90"
+          }
+        ],
+        "createdAt": "2022-04-12T19:14:24.5360595",
+        "updatedAt": "2021-12-24T19:26:04.3202887"
+      }
+    ],
+    "generalExp": 463971.9377569724,
+    "curWorkExp": 0,
+    "curFieldExp": 511230.0326634338,
+    "status": "Consultation",
+    "typeEducation": "TwoOrMoreHigher",
+    "maritalStatus": "Single",
+    "typeEmp": "Coowner",
+    "monthIncome": 95949.44342782229,
+    "monthExpense": 66370.21045497162,
+    "files": [],
+    "documents": [
+      {
+        "documentGuid": "025a469f-2ba2-41e9-b391-91056a4198e7"
+      },
+      {
+        "documentGuid": "19988ec9-84a0-481d-8c5e-851231dfaa5c"
+      }
+    ],
+    "communications": [
+      {
+        "type": "Email",
+        "value": "Denis45@mail.ru"
+      }
+    ],
+    "createdAt": "2022-02-12T23:56:52.7945847",
+    "updatedAt": "2021-09-20T05:39:54.3627248"
+  },
+  {
+    "id": "18e63794-7dba-48aa-ad93-2486122136ce",
+    "name": "Таисия",
+    "surname": "Иванов",
+    "patronymic": "Викторич",
+    "dob": "2021-12-07T23:43:10.0998777",
+    "spouse": null,
+    "children": [
+      {
+        "name": "Лаврентий",
+        "surname": "Кулакова",
+        "patronymic": "Таисияич",
+        "dob": "2021-11-18T17:35:22.059368"
+      },
+      {
+        "name": "Виктория",
+        "surname": "Рыбакова",
+        "patronymic": "Таисияич",
+        "dob": "2021-09-18T08:50:43.6830062"
+      }
+    ],
+    "passport": {
+      "id": "dd18b99d-9c93-4fd2-b94b-66f2d8a48618",
+      "series": "0884",
+      "number": "879 237",
+      "giver": "Боброва - Гурьева",
+      "dateIssued": "2021-07-24T23:06:04.7266116",
+      "birthPlace": "Тверь",
+      "createdAt": "2021-07-24T16:18:28.6265171",
+      "updatedAt": "2021-11-22T07:10:45.3564773"
+    },
+    "livingAddress": {
+      "id": "16895e24-05cb-4e86-b520-a606b062eebc",
+      "zipCode": "997219",
+      "country": "Намибия",
+      "region": "Республика Тыва",
+      "city": "Ижевск",
+      "street": "Некрасова пл.",
+      "house": "88",
+      "block": "y",
+      "apartment": "嬃⡨ሑ",
+      "createdAt": "2022-02-19T01:33:43.6018463",
+      "updatedAt": "2022-02-13T02:24:06.7201121"
+    },
+    "regAddress": {
+      "id": "c2ffea96-c303-4667-8eaa-f4bf35a695c4",
+      "zipCode": "715753",
+      "country": "Бельгия",
+      "region": "Ямало-Ненецкий автономный округ",
+      "city": "Воронеж",
+      "street": "пл. Набережная",
+      "house": "27",
+      "block": "b",
+      "apartment": "閾",
+      "createdAt": "2022-01-07T10:04:58.0350183",
+      "updatedAt": "2021-05-03T00:55:58.6404647"
+    },
+    "jobs": [
+      {
+        "companyName": "Мартынова Сбыт",
+        "type": "Pluralistically",
+        "dateEmp": "2022-03-19T03:36:15.2017652",
+        "dateDismissal": "2021-05-10T11:29:18.8937732",
+        "tin": "tjyxjgwofe",
+        "address": {
+          "id": "e23e282c-add3-473c-ac3f-34528dee0d0b",
+          "zipCode": "824654",
+          "country": "Гайана",
+          "region": "Республика Калмыкия",
+          "city": "Челябинск",
+          "street": "Энергетиков улица",
+          "house": "81",
+          "block": "v",
+          "apartment": "ẜ",
+          "createdAt": "2021-11-27T13:27:15.904221",
+          "updatedAt": "2022-01-11T13:34:25.327964"
+        },
+        "jobTitle": "fmvtaebicp",
+        "monthIncome": 2456,
+        "fioManager": "Денис Беляев",
+        "site": "https://вадим.net/",
+        "phoneNumbers": [],
+        "createdAt": "2022-03-01T11:47:39.8042121",
+        "updatedAt": "2021-08-28T19:52:29.7661359"
+      }
+    ],
+    "generalExp": 360127.92278087133,
+    "curWorkExp": 0,
+    "curFieldExp": 710956.029459348,
+    "status": "Rejection",
+    "typeEducation": "Higher",
+    "maritalStatus": "Widower",
+    "typeEmp": "Owner",
+    "monthIncome": 58423.35143053129,
+    "monthExpense": 42635.30254486729,
+    "files": [],
+    "documents": [],
+    "communications": [
+      {
+        "type": "Phone",
+        "value": "(955)342-04-90"
+      },
+      {
+        "type": "Phone",
+        "value": "(955)342-04-90"
+      }
+    ],
+    "createdAt": "2021-06-07T01:31:07.4872311",
+    "updatedAt": "2021-06-02T23:33:36.3417284"
+  },
+  {
+    "id": "5e93ce3c-6f4a-4a43-a56f-5ddebccbcc36",
+    "name": "Роман",
+    "surname": "Новиков",
+    "patronymic": "Ильяич",
+    "dob": "2021-12-09T16:35:01.6404606",
+    "spouse": null,
+    "children": [
+      {
+        "name": "Лариса",
+        "surname": "Лихачева",
+        "patronymic": "Романич",
+        "dob": "2021-08-27T03:21:01.3950552"
+      }
+    ],
+    "passport": {
+      "id": "e9426f3f-6ba7-4820-a1e3-5d9e49aac7f1",
+      "series": "7695",
+      "number": "317 963",
+      "giver": "Зимина Снаб",
+      "dateIssued": "2021-08-21T13:14:51.9284028",
+      "birthPlace": "Липецк",
+      "createdAt": "2022-01-13T22:20:30.1147854",
+      "updatedAt": "2021-06-28T19:20:28.1320524"
+    },
+    "livingAddress": {
+      "id": "6352ae3d-1756-420a-a81d-13c3a739d128",
+      "zipCode": "836689",
+      "country": "Буркина-Фасо",
+      "region": "Чеченская Республика",
+      "city": "Липецк",
+      "street": "Комарова ул.",
+      "house": "6",
+      "block": "o",
+      "apartment": "繣",
+      "createdAt": "2021-07-23T10:32:40.8417451",
+      "updatedAt": "2021-07-06T20:08:58.6630213"
+    },
+    "regAddress": {
+      "id": "272d6809-d614-4c64-bcb5-e03a3829cfd2",
+      "zipCode": "446828",
+      "country": "Словения",
+      "region": "Республика Хакасия",
+      "city": "Санкт-Петербург",
+      "street": "Ленина пл.",
+      "house": "-28",
+      "block": "b",
+      "apartment": "䡹",
+      "createdAt": "2022-03-08T17:08:22.8833448",
+      "updatedAt": "2021-04-17T09:37:14.8086679"
+    },
+    "jobs": [],
+    "generalExp": 2410.2944891947764,
+    "curWorkExp": 0,
+    "curFieldExp": 630569.4690116539,
+    "status": "Consultation",
+    "typeEducation": "SecondarySpecial",
+    "maritalStatus": "Widower",
+    "typeEmp": "Retiree",
+    "monthIncome": 15673.219326731385,
+    "monthExpense": 13381.554146009288,
+    "files": [
+      {
+        "fileGuid": "4767b8c9-b4b7-4915-8298-d834e4760321"
+      },
+      {
+        "fileGuid": "473afa5f-df2a-4050-a55f-760ae8890aa8"
+      }
+    ],
+    "documents": [
+      {
+        "documentGuid": "40697073-cfd5-4803-b678-606555595d6c"
+      }
+    ],
+    "communications": [
+      {
+        "type": "Email",
+        "value": "Denis45@mail.ru"
+      },
+      {
+        "type": "Phone",
+        "value": "(955)342-04-90"
+      },
+      {
+        "type": "Email",
+        "value": "Denis45@mail.ru"
+      }
+    ],
+    "createdAt": "2022-03-29T05:07:34.5665053",
+    "updatedAt": "2022-01-22T18:46:42.4569414"
+  },
+  {
+    "id": "4bcd57ed-ed79-4f65-8fb2-47003be3de4c",
+    "name": "Лидия",
+    "surname": "Никифоров",
+    "patronymic": "Эдуардич",
+    "dob": "2022-02-17T18:11:32.1716967",
+    "spouse": null,
+    "children": [
+      {
+        "name": "Юлия",
+        "surname": "Суханова",
+        "patronymic": "Лидияич",
+        "dob": "2022-02-14T05:15:10.3698763"
+      },
+      {
+        "name": "Георгий",
+        "surname": "Гусева",
+        "patronymic": "Лидияич",
+        "dob": "2021-07-12T21:30:14.1340143"
+      }
+    ],
+    "passport": {
+      "id": "68eb55f5-4184-4680-844d-fd7cbb3de39b",
+      "series": "8976",
+      "number": "839 429",
+      "giver": "Кудрявцева - Веселов",
+      "dateIssued": "2021-09-01T01:34:49.6677098",
+      "birthPlace": "Барнаул",
+      "createdAt": "2022-02-10T00:22:20.0271591",
+      "updatedAt": "2021-08-05T00:23:34.436051"
+    },
+    "livingAddress": {
+      "id": "a7713e00-8d1c-4edf-815b-7502d35f30a6",
+      "zipCode": "810759",
+      "country": "Малави",
+      "region": "Саратовская область",
+      "city": "Киров",
+      "street": "Луговая пл.",
+      "house": "75",
+      "block": "i",
+      "apartment": "䠣",
+      "createdAt": "2021-09-24T04:34:43.867931",
+      "updatedAt": "2021-05-10T05:14:59.9805168"
+    },
+    "regAddress": {
+      "id": "28f200ab-bee7-48e5-92dc-ae6a9d48086f",
+      "zipCode": "218896",
+      "country": "Таиланд",
+      "region": "Читинская область",
+      "city": "Москва",
+      "street": "8 Марта пл.",
+      "house": "28",
+      "block": "l",
+      "apartment": "鼂ힰ",
+      "createdAt": "2022-03-02T19:55:20.2976776",
+      "updatedAt": "2021-06-02T14:06:56.2511658"
+    },
+    "jobs": [],
+    "generalExp": 854774.2529095962,
+    "curWorkExp": 0,
+    "curFieldExp": 236099.7461881953,
+    "status": "Deal",
+    "typeEducation": "AcademicDegree",
+    "maritalStatus": "Married",
+    "typeEmp": "Owner",
+    "monthIncome": 50450.04182050472,
+    "monthExpense": 47732.38708625193,
+    "files": [
+      {
+        "fileGuid": "ee489a9c-cf9a-4d62-9713-8ccd7fad6b5e"
+      }
+    ],
+    "documents": [],
+    "communications": [
+      {
+        "type": "Email",
+        "value": "Denis45@mail.ru"
+      }
+    ],
+    "createdAt": "2022-01-12T11:29:52.7614592",
+    "updatedAt": "2021-12-18T11:17:16.670409"
+  }
+]

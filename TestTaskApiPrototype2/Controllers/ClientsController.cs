@@ -4,13 +4,16 @@ using Microsoft.EntityFrameworkCore;
 using TestTaskApiPrototype2.Models;
 using System.Threading.Tasks;
 using System.Collections.Generic;
+using System.Linq;
 using System.Net.Http;
+using System.Text;
 using Microsoft.AspNetCore.Http;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using TestTaskApiPrototype2.Models.Responses;
+using TestTaskApiPrototype2.Utils;
 
 namespace TestTaskApiPrototype2.Controllers
 {
@@ -27,8 +30,18 @@ namespace TestTaskApiPrototype2.Controllers
         [HttpGet]
         public async Task<ActionResult<IEnumerable<Client>>> GetClients()
         {
-            Console.WriteLine(ControllerContext.HttpContext.Request.Path);
-            return await _context.Clients.ToListAsync();
+            var clients = _context.Clients // разобраться попродробнее
+                .Include(c => c.Passport)
+                .Include(c => c.Children)
+                .Include(c => c.Communications)
+                .Include(c => c.Documents)
+                .Include(c=> c.Jobs).ThenInclude(j => j.Address)
+                .Include(c => c.Jobs).ThenInclude(j => j.PhoneNumbers)
+                .Include(c => c.LivingAddress)
+                .Include(c => c.RegAddress)
+                .Include(c => c.Files);
+
+            return await clients.ToListAsync();
         }
 
         [HttpPut]
@@ -37,19 +50,16 @@ namespace TestTaskApiPrototype2.Controllers
             var request = ControllerContext.HttpContext.Request;
             if (request.ContentType == "application/json")
             {
-                Console.WriteLine("GOT JSON");
-                Client client = new Client();
+                await using (_context)
+                {
+                    Console.WriteLine("GOT JSON");
+                    Client client = Mocker.CreateRandomClient();
 
-                _context.Clients.Add(client);
-                client.TypeEducation = EducationType.Higher;
-                client.Status = StatusType.Lead;
-                client.MaritalStatus = MaritalStatusType.Married;
-                client.TypeEmp = EmpType.Owner;
-                await _context.SaveChangesAsync();
+                    _context.Clients.Add(client);
+                    await _context.SaveChangesAsync();
 
-                var options = new JsonSerializerOptions(JsonSerializerDefaults.Web);
-                options.Converters.Add(new JsonStringEnumConverter());
-                return new JsonResult(client, options);
+                    return new JsonResult(client);
+                }
             }
             else
             {
@@ -59,6 +69,5 @@ namespace TestTaskApiPrototype2.Controllers
                 return result;
             }
         }
-
     }
 }
