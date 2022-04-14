@@ -11,6 +11,11 @@ namespace TestTaskApiPrototype2.Models
         [Key] //стоит ли явно указывать?
         [JsonIgnore]
         public int ChildId { get; set; }
+        // [JsonIgnore]
+        // public Client Client { get; set; }
+        // [JsonIgnore]
+        // public int ClientId { get; set; }
+
 
 
         [DataMember(Name = "name")]

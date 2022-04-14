@@ -20,7 +20,7 @@ namespace TestTaskApiPrototype2.Models
         public Guid Id { get; set; }
 
         [DataMember(Name= "name")]
-        public string Name;
+        public string Name { get; set; }
 
         [DataMember(Name= "surname")]
         public string Surname { get; set; }
