@@ -3,6 +3,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using TestTaskApiPrototype2.Models;
 
 namespace TestTaskApiPrototype2
 {
@@ -19,6 +20,7 @@ namespace TestTaskApiPrototype2
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddControllers();
+            services.AddDbContext<ApplicationContext>();
             // services.AddSwaggerGen(c =>
             // {
             //     c.SwaggerDoc("v1", new OpenApiInfo {Title = "TestTaskApiPrototype2", Version = "v1"});
