@@ -9,6 +9,7 @@ namespace TestTaskApiPrototype2.Controllers
 {
     [Route("api/[controller]")]
     public class ClientsController
+    public class ClientsController : Controller
     {
         private readonly ApplicationContext _context;
 
