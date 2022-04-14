@@ -32,7 +32,7 @@ namespace TestTaskApiPrototype2.Models
         public DateTime DateOfBirth { get; set; }
 
         [DataMember(Name= "spouse")]
-        public Client Spouse { get; set; }
+        public Client Spouse { get; set; } //one-to-one?
 
         [DataMember(Name= "children")]
         public ICollection<Child> Children { get; set; }

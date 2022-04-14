@@ -1,6 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 using System.Runtime.Serialization;
+using System.Text.Json.Serialization;
 
 namespace TestTaskApiPrototype2.Models
 {
@@ -21,6 +22,7 @@ namespace TestTaskApiPrototype2.Models
         public string Patronymic { get; set; }
 
         [DataMember(Name = "dob")]
+        [JsonPropertyName("dob")]
         public DateTime DateOfBirth { get; set; }
     }
 }
