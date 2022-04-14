@@ -12,6 +12,6 @@ namespace TestTaskApiPrototype2.Models
         public ClientCommunicationType Type { get; set; }
 
         [DataMember(Name = "phone")]
-        public ClientCommunicationType Phone { get; set; }
+        public string Value { get; set; }
     }
 }

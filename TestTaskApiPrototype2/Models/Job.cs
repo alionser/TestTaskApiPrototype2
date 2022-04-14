@@ -34,7 +34,7 @@ namespace TestTaskApiPrototype2.Models
         public string JobTitle { get; set; }
 
         [DataMember(Name="monIncome")]
-        public int MonthIncome { get; set; }
+        public int MonthIncome { get; set; } //тут точно int?
 
         [DataMember(Name="fioManager")]
         public string FioManager { get; set; }

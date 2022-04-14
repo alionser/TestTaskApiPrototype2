@@ -11,6 +11,6 @@ namespace TestTaskApiPrototype2.Models
         public int DocumentId { get; set; }
 
 
-        public Guid FileGuid { get; set; }
+        public Guid DocumentGuid { get; set; } //make migration
     }
 }
