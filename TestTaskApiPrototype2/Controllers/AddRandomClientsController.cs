@@ -7,21 +7,21 @@ using Microsoft.AspNetCore.Mvc;
 namespace TestTaskApiPrototype2.Controllers
 {
     [Route("api/[controller]")]
-    public class AddRandomClients : Controller
+    public class AddRandomClientsController : Controller
     {
         private readonly ApplicationContext _context;
 
-        public AddRandomClients(ApplicationContext context)
+        public AddRandomClientsController(ApplicationContext context)
         {
             _context = context;
         }
 
         [HttpPost] // или через put?
-        public IActionResult PostRandomClients(int? count) //Task?
+        public async Task<IActionResult> PostRandomClients(int? count) //Task?
         {
             var clients = Mocker.CreateRandomClients(count ?? 5);
-            _context.Clients.AddRange(clients);
-            _context.SaveChanges();
+            await _context.Clients.AddRangeAsync(clients);
+            await _context.SaveChangesAsync();
 
             var resultJsonModel = new ClientsPaginationAll {Data = clients};
             return  new JsonResult(resultJsonModel) {StatusCode = 200};
