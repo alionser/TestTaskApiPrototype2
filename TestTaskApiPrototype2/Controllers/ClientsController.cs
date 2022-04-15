@@ -48,14 +48,6 @@ namespace TestTaskApiPrototype2.Controllers
                 {
                     Console.WriteLine("GOT JSON");
 
-                    // Client client = Mocker.CreateRandomClient();
-                    // _context.Clients.Add(client);
-                    // await _context.SaveChangesAsync();
-
-                    // string test = "{job : 'Main'}";
-                    // var des = JsonSerializer.Deserialize<JobType>(test);
-                    // Console.WriteLine(des);
-
                     var reader = request.ReadFromJsonAsync<Client>(); //TODO: десериализцаия перечислений, отправленых строками
                     Client client = await  reader;
                     _context.Clients.Add(client);

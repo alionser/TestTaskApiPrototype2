@@ -11,6 +11,18 @@ namespace TestTaskApiPrototype2.Utils
         private static readonly Faker _faker = new Faker("ru");
         private static readonly Random rng = new Random();
 
+        public static List<Client> CreateRandomClients(int count = 3)
+        {
+            List<Client> result = new List<Client>();
+
+            for (int i = 0; i < count; i++)
+            {
+                result.Add(CreateRandomClient());
+            }
+
+            return result;
+        }
+
         public static Client CreateRandomClient()
         {
 

@@ -2,7 +2,7 @@
 
 namespace TestTaskApiPrototype2.Models.Responses
 {
-    public class ClientsPagination_allOf //TODO: переименовать
+    public class ClientsPaginationAll //TODO: переименовать
     {
         public ICollection<Client> Data { get; set; }
     }
