@@ -13,6 +13,7 @@ namespace TestTaskApiPrototype2.Models
 
 
         [DataMember(Name = "Type")]
+        [JsonConverter(typeof(JsonStringEnumConverter))]
         public ClientCommunicationType Type { get; set; }
 
         [DataMember(Name = "phone")]

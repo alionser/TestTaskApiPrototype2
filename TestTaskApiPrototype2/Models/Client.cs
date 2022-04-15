@@ -60,19 +60,20 @@ namespace TestTaskApiPrototype2.Models
         public double CurFieldExp { get; set; } //int?
 
         [DataMember(Name= "status")]
-        // [JsonConverter(typeof(JsonStringEnumConverter))]
+        [JsonConverter(typeof(JsonStringEnumConverter))]
+
         public StatusType Status { get; set; }
 
         [DataMember(Name= "typeEducation")]
-        // [JsonConverter(typeof(JsonStringEnumConverter))]
+        [JsonConverter(typeof(JsonStringEnumConverter))]
         public EducationType TypeEducation { get; set; }
 
         [DataMember(Name= "maritalStatus")]
-        // [JsonConverter(typeof(JsonStringEnumConverter))]
+        [JsonConverter(typeof(JsonStringEnumConverter))]
         public MaritalStatusType MaritalStatus { get; set; }
 
         [DataMember(Name= "typeEmp")]
-        // [JsonConverter(typeof(JsonStringEnumConverter))]
+        [JsonConverter(typeof(JsonStringEnumConverter))]
         public EmpType TypeEmp { get; set; }
 
         [DataMember(Name= "monIncome")]

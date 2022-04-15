@@ -4,14 +4,8 @@ using Microsoft.EntityFrameworkCore;
 using TestTaskApiPrototype2.Models;
 using System.Threading.Tasks;
 using System.Collections.Generic;
-using System.Linq;
-using System.Net.Http;
-using System.Text;
-using Microsoft.AspNetCore.Http;
 using System.Text.Json;
-using System.Text.Json.Serialization;
 using Microsoft.AspNetCore.Http;
-using Microsoft.Extensions.Logging;
 using TestTaskApiPrototype2.Models.Responses;
 using TestTaskApiPrototype2.Utils;
 
@@ -53,8 +47,17 @@ namespace TestTaskApiPrototype2.Controllers
                 await using (_context)
                 {
                     Console.WriteLine("GOT JSON");
-                    Client client = Mocker.CreateRandomClient();
 
+                    // Client client = Mocker.CreateRandomClient();
+                    // _context.Clients.Add(client);
+                    // await _context.SaveChangesAsync();
+
+                    // string test = "{job : 'Main'}";
+                    // var des = JsonSerializer.Deserialize<JobType>(test);
+                    // Console.WriteLine(des);
+
+                    var reader = request.ReadFromJsonAsync<Client>(); //TODO: десериализцаия перечислений, отправленых строками
+                    Client client = await  reader;
                     _context.Clients.Add(client);
                     await _context.SaveChangesAsync();
 
@@ -64,8 +67,10 @@ namespace TestTaskApiPrototype2.Controllers
             else
             {
                 Console.WriteLine("NOT JSON");
-                var result = new JsonResult(new ServerError(400, "WRONG_CONTENT_TYPE", "Получен не JSON"));
-                result.StatusCode = 400;
+                var result = new JsonResult(new ServerError(400, "WRONG_CONTENT_TYPE", "Получен не JSON"))
+                {
+                    StatusCode = 400
+                };
                 return result;
             }
         }

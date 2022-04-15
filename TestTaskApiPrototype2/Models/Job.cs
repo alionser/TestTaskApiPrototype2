@@ -18,6 +18,7 @@ namespace TestTaskApiPrototype2.Models
         public string CompanyName { get; set; }
 
         [DataMember(Name="type")]
+        [JsonConverter(typeof(JsonStringEnumConverter))]
         public JobType Type { get; set; }
 
         [DataMember(Name="dateEmp")]

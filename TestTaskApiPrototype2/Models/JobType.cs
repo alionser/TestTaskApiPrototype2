@@ -2,6 +2,7 @@
 
 namespace TestTaskApiPrototype2.Models
 {
+    [DataContract]
     public enum JobType
     {
         [DataMember(Name = "main")]
