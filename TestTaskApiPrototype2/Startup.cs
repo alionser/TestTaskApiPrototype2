@@ -9,6 +9,7 @@ using TestTaskApiPrototype2.Models;
 using System.Text.Json;
 using System.Text.Json.Serialization;
 using Bogus;
+using Microsoft.Extensions.Logging;
 using Newtonsoft.Json.Converters;
 
 namespace TestTaskApiPrototype2

@@ -10,8 +10,7 @@ namespace TestTaskApiPrototype2.Models
         public ApplicationContext(DbContextOptions<ApplicationContext> options)
             :base(options)
         {
-            Database.EnsureCreated();
-
+            Database.EnsureCreated(); //TODO: УБРАТЬ ИЗ КОНСТРУКТОРА
         }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
