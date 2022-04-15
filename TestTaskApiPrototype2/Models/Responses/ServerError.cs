@@ -3,7 +3,7 @@
     public class ServerError // или структурой? что с DataContract?
     {
         public int Code { get; set; } = 400;
-        public string Key { get; set; } //not nullable?
+        public string Key { get; set; } //not nullable? TODO: добавать нормальное перечисление
         public string Message { get; set; }
 
         public ServerError(int code, string key, string message) //TODO: оптимизировать констурторы цепочкой

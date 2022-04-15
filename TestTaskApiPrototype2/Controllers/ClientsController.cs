@@ -4,11 +4,10 @@ using Microsoft.EntityFrameworkCore;
 using TestTaskApiPrototype2.Models;
 using System.Threading.Tasks;
 using System.Collections.Generic;
-using System.Text.Json;
 using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Logging;
 using TestTaskApiPrototype2.Models.Responses;
-using TestTaskApiPrototype2.Utils;
+
 
 namespace TestTaskApiPrototype2.Controllers
 {
@@ -18,16 +17,27 @@ namespace TestTaskApiPrototype2.Controllers
         private readonly ApplicationContext _context;
         private readonly ILogger<ClientsController> _log;
 
-        public ClientsController(ApplicationContext context, ILogger logger, ILogger<ClientsController> log)
+        public ClientsController(ApplicationContext context,
+            ILogger<ClientsController> log)
         {
             _context = context;
             _log = log;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Client>>> GetClients(string query)
+        public async Task<ActionResult<IEnumerable<Client>>> GetClients(
+            string query = "",
+            string sortBy = "createdAt",
+            string sortDit = "desc",
+            int page = 1,
+            int limitPerPage = 10)
         {
-            var clients = _context.Clients // разобраться попродробнее
+            var request = ControllerContext.HttpContext.Request;
+            _log.LogInformation($"{Request.Method} {request.Path + request.QueryString}");
+
+
+
+            var clients = _context.Clients // разобраться попродробнее, SplitQuery
                 .Include(c => c.Passport)
                 .Include(c => c.Children)
                 .Include(c => c.Communications)
@@ -45,10 +55,11 @@ namespace TestTaskApiPrototype2.Controllers
         public async Task<IActionResult> PutClient()
         {
             var request = ControllerContext.HttpContext.Request;
+            _log.LogInformation($"{Request.Method} {request.Path + request.QueryString}");
 
             if (request.ContentType == "application/json")
             {
-                Console.WriteLine("GOT JSON");
+
                 var reader =
                     request.ReadFromJsonAsync<Client>(); //TODO: десериализцаия перечислений, отправленых строками
                 Client client = await reader;
@@ -63,7 +74,6 @@ namespace TestTaskApiPrototype2.Controllers
             }
             else
             {
-                Console.WriteLine("NOT JSON");
                 var result = new JsonResult(new ServerError(400, "WRONG_CONTENT_TYPE", "Получен не JSON"))
                 {
                     StatusCode = 400
