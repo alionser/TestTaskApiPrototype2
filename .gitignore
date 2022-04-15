@@ -1,6 +1,10 @@
 .idea/
 
+Logs/
+
 *.db
+*.db-shm
+*.db-wal
 
 bin/
 obj/
